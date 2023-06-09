@@ -10,3 +10,20 @@ body {
   background-color: #333;
   color: whitesmoke;
 }
+
+dd {
+  margin-left: 30px;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover,
+a:active {
+  color: #eee;
+}
