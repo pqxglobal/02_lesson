@@ -13,6 +13,14 @@ const About = () => {
         asperiores quam, libero quod nihil beatae aperiam assumenda necessitatibus dolore fuga,
         corrupti aliquid. Libero atque dolor aliquid architecto laboriosam!
       </p>
+
+      <hr />
+
+      <ul className='list-disc list-outside ms-8'>
+        <li>Download an <a href="/public/html5.png" download>HTML favicon</a></li>
+      </ul>
+
+
       <hr />
       &lt;&lt;&lt; &copy; <a href="/about">Dave Gray</a> &gt;&gt;&gt;
     </>
