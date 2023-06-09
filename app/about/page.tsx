@@ -24,9 +24,18 @@ const About = () => {
             HTML favicon
           </a>
         </li>
+        <li>
+          Contact me at <a href="mailto:random@email.com">my email address</a>.
+        </li>
+        <li>
+          <a href="https://www.google.com" target="blank">google</a>
+        </li>
       </ul>
       <hr />
       &lt;&lt;&lt; &copy; <a href="/about">Dave Gray</a> &gt;&gt;&gt;
+      <p>
+        <a href="/">Back to Home</a>
+      </p>
     </>
   );
 };

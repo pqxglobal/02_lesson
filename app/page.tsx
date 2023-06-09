@@ -1,3 +1,8 @@
+import Image from 'next/image';
+import Logo from '../public/html_logo_300x300.png';
+import Carribean from '../public/caribbean.jpg';
+import Vacation from '../public/vacation.jpg';
+
 export default function Home() {
   return (
     <>
@@ -17,6 +22,18 @@ export default function Home() {
       <section id="html">
         <h2 className="text-2xl">I&apos;m Ready to Learn HTML</h2>
         <p>This is my first web page.</p>
+        <Image
+          src={Logo}
+          alt="HTML5 logo"
+          priority={true}
+        />
+        <figure>
+          <figcaption>An example of HTML5 code</figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+          </p>
+        </figure>
+
         <h3 className="text-[18.72px]">My Daily Schedule</h3>
         <p>Let me tell you how:</p>
         <ol className="list-decimal list-inside">
@@ -43,6 +60,15 @@ export default function Home() {
         <h3 className="text-[18.72px] text-[#333]">Places I like to visit</h3>
         <ul className="list-disc list-outside ms-8">
           <li>I&apos;ve heard good things about the caribbean.</li>
+          <figure>
+            <Image
+              src={Carribean}
+              alt="picture of the carribean beach"
+              priority={true}
+            />
+            <figcaption>Carribean Beach Getaway</figcaption>
+          </figure>
+
           <li>
             I&apos;ve heard good things about going here:
             <address className="ml-5">
@@ -52,6 +78,13 @@ export default function Home() {
               <br />
               Colonia Morelos, México 77580
             </address>
+            <figure>
+              <Image
+                src={Vacation}
+                alt="Cancun vacation image"
+              />
+              <figcaption>A Carribean Vacation Image</figcaption>
+            </figure>
           </li>
         </ul>
         {/* TODO: Add more places */}
