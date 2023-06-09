@@ -16,10 +16,10 @@ const About = () => {
       <hr />
       <ul className="list-disc list-outside ms-8">
         <li>
-          Download an{' '}
+          Download an
           <a
-            href={require('../../public/html5.png')}
-            download={'html5.png'}
+            href="html5.png"
+            download="html5.png"
           >
             HTML favicon
           </a>
