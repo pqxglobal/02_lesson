@@ -17,7 +17,7 @@ const About = () => {
       <hr />
 
       <ul className='list-disc list-outside ms-8'>
-        <li>Download an <a href="/public/html5.png" download>HTML favicon</a></li>
+        <li>Download an <a href="../../public/html5.png" download>HTML favicon</a></li>
       </ul>
 
 
