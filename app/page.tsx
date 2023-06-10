@@ -63,6 +63,57 @@ export default function Home() {
                 </p>
               </details>
             </aside>
+            <br />
+            <table>
+              <caption>My Daily Schedule</caption>
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Activity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Morning</th>
+                  <td>
+                    <time dateTime="08:00">8am</time>-<time dateTime="11:00">11am</time>
+                  </td>
+                  <td>Write Code</td>
+                </tr>
+                <tr>
+                  <th scope="row">Break</th>
+                  <td>
+                    <time dateTime="11:00">11am</time>-<time dateTime="12:00">12pm</time>
+                  </td>
+                  <td>Eat Lunch</td>
+                </tr>
+                <tr>
+                  <th scope="row">Afternoon</th>
+                  <td>
+                    <time dateTime="12:00">12pm</time>-<time dateTime="17:00">5pm</time>
+                  </td>
+                  <td>Study for Other Courses</td>
+                </tr>
+                <tr>
+                  <th scope="row">Evening</th>
+                  <td rowSpan={2}>All Other Times</td>
+                  <td>Free Time</td>
+                </tr>
+                <tr>
+                  <th scope="row">Night</th>
+                  <td>Sleep</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colSpan={3}>
+                    And that&apos;s what I do every day, 5 days a week. Just eat, sleep, code ..and
+                    recharge!
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
           </section>
         </article>
         <hr />
