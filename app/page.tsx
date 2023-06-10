@@ -16,6 +16,9 @@ export default function Home() {
             <li>
               <a href="#vacation">Planning a Vacation</a>
             </li>
+            <li>
+              <a href="#contact">Contact Me</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -173,6 +176,178 @@ export default function Home() {
               <dd>These are also cold.</dd>
             </dl>
           </section>
+        </article>
+
+        <hr />
+
+        <article id="contact">
+          <h2>Contact Me</h2>
+          <p>I&apos;d really like to hear from you!</p>
+
+          <form
+            action="https://httpbin.org/get"
+            method="get"
+          >
+            <fieldset className="border border-white border-solid m-3 p-3 rounded-md">
+              <legend>Personal Info</legend>
+              <p className="my-5">
+                <label htmlFor="firstName">First Name:</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Jane"
+                  autoComplete="on"
+                  required
+                  autoFocus
+                  className="text-black rounded-full ml-3 px-3 py-1"
+                />
+              </p>
+              <p className="mb-5">
+                <label htmlFor="lastName">Last Name:</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Doe"
+                  autoComplete="on"
+                  required
+                  className="text-black rounded-full ml-3 px-3 py-1"
+                />
+              </p>
+              <p className="mb-5">
+                <label htmlFor="password">Password:</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="your secret"
+                  required
+                  className="text-black rounded-full ml-3 px-3 py-1"
+                />
+              </p>
+              <p className="mb-5">
+                <label htmlFor="phone">Phone:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="5555555555"
+                  required
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  className="text-black rounded-full ml-3 px-3 py-1"
+                />
+              </p>
+              <p className="mb-5">
+                <label htmlFor="decade">Favorite Decade:</label>
+                <input
+                  type="number"
+                  name="decade"
+                  id="decade"
+                  min={1950}
+                  max={2020}
+                  step={10}
+                  value={1980}
+                  className="text-black rounded-full ml-3 px-3 py-1"
+                />
+              </p>
+              <p className="mb-5">
+                <label htmlFor="coffee">Favorite Coffee:</label>
+                <select
+                  name="coffee"
+                  id="coffee"
+                  multiple
+                  size={5}
+                  className="text-black rounded-md ml-3 p-2"
+                >
+                  <optgroup
+                    
+                    label="Coffees"
+                  >
+                    <option value="regular coffee">Regular Coffee</option>
+                    <option value="iced coffee">Iced Coffee</option>
+                  </optgroup>
+                  <optgroup label="Espresso Drinks">
+                    <option
+                      value="latte"
+                      selected
+                    >
+                      Latte
+                    </option>
+                    <option value="cappucino">Cappucino</option>
+                    <option value="cortado">Cortado</option>
+                    <option value="americano">Americano</option>
+                  </optgroup>
+                  <option value="other">Other</option>
+                </select>
+              </p>
+              {/* <p className="mb-5">
+              <label htmlFor="coffee">Favorite Coffee</label>
+              <input
+                type='text'
+                name="coffee"
+                id="coffee"
+                list='coffee-list'
+                className="text-black"
+              />
+              <datalist id='coffee-list'>
+                <option value="coffee"/>
+                <option value="latte"/>
+                <option value="espresso"/>
+                <option value="cortado"/>
+                <option value="americano"/>
+                <option value="other"/>
+              </datalist>
+            </p> */}
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>What is your favorite food?</legend>
+              <p>
+                <input type="radio" name="food" id='tacos' value="tacos" />
+                <label htmlFor="tacos">Tacos</label>
+              </p>
+              <p>
+                <input type="radio" name="food" id='pizza' value="pizza" />
+                <label htmlFor="tacos">Pizza</label>
+              </p>
+              <p>
+                <input type="radio" name="food" id='other' value="other" />
+                <label htmlFor="tacos">Other</label>
+              </p>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Do you have pets?</legend>
+              <p>
+                <input type="checkbox" name="pets" id="dog" value="dog" />
+                <label htmlFor="dog">Dog</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="cat" value="cat" />
+                <label htmlFor="cat">Cat</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="fish" value="fish" />
+                <label htmlFor="fish">Fish</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="otherPet" value="otherPet" />
+                <label htmlFor="otherPet">Other</label>
+              </p>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Send Me A Note</legend>
+              <label htmlFor="message">Your Message:</label>
+              <br />
+              <textarea name="message" id="message" cols="30" rows="10" placeholder='Type your message here'></textarea>
+            </fieldset>
+            <br />
+            <button type='submit'>Submit</button>
+            <button type='submit' formAction="https://httpbin.org/post" formMethod='post'>Post</button>
+            <button type="reset">Reset</button>
+          </form>
         </article>
       </main>
       <hr />
